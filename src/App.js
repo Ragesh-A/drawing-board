@@ -1,11 +1,10 @@
+import Container from './components/container/Container';
+import { ContextProvider } from './utils/context/context';
 
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+const App = () => (
+  <ContextProvider>
+    <Container />
+  </ContextProvider>
+);
 
 export default App;
