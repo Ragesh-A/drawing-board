@@ -1,0 +1,15 @@
+.palate {
+  width: 30px;
+  height: 60px;
+  rotate: 45deg;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .palate{
+    height: 30px;
+    width: 50px;
+    rotate: 0deg;
+    border-radius: 5px;
+  }
+}

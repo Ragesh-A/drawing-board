@@ -4,7 +4,7 @@ const Context = createContext()
 
 const ContextProvider = ({ children }) => {
 
-  const [color, setColor] = useState('#0000ff');
+  const [color, setColor] = useState('#ffffff');
   const [brushSize, setBrushSize] = useState(1)
   
   const changeColor = (userColor) => {
