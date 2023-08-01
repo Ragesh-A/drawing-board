@@ -1,5 +1,7 @@
 # Drawing app
 
+![Screenshot (140)](https://github.com/Ragesh-A/drawing-board/assets/118962921/b3a0b789-84ab-49f1-8ca9-848331efe9ea)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
