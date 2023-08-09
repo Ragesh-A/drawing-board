@@ -12,7 +12,7 @@ const Board = () => {
 
   const canvasRef = useRef(null);
   const [ctx, setCtx] = useState();
-  const { color, brushSize } = useContext(Context);
+  const { color, brushSize, setCanvasContext, setCanvasRef } = useContext(Context);
 
   const draw = useCallback((e) => {
       if (ctx) {
@@ -30,6 +30,9 @@ const Board = () => {
     if (!ctx) {
       setCtx(canvas.getContext('2d'));
     }
+
+    setCanvasContext(ctx)
+
     const startDraw = (e) => {
       ctx.beginPath();
       canvas.addEventListener('mousemove', draw);
@@ -49,7 +52,7 @@ const Board = () => {
       canvas.removeEventListener('mouseout', stopDraw);
       canvas.removeEventListener('mousemove', draw);
     };
-  }, [ctx, draw]);
+  }, [ctx, draw, setCanvasContext]);
 
   useEffect(()=> {
     const resizeCanvas = () => {
@@ -57,12 +60,14 @@ const Board = () => {
       canvasRef.current.height = window.innerHeight - 32;
     };
 
+    setCanvasRef(canvasRef)
+
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
     return () => {
       window.removeEventListener('resize', resizeCanvas);
     }
-  }, [])
+  }, [setCanvasRef])
 
   return (
     <>
