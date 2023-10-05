@@ -41,3 +41,15 @@
     border-radius: 5px;
   }
 }
+
+.btn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn .icon {
+  max-width: 25px;
+
+}
