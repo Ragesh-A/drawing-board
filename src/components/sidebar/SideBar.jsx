@@ -3,6 +3,10 @@ import { Context } from '../../utils/context/context';
 import Palate from '../palate/Palate';
 import './style.css';
 
+import eraserImg from '../../assets/images/eraser.png'
+import downloadImg from '../../assets/images/download.png'
+import clearImg from '../../assets/images/clear.png'
+
 const SideBar = () => {
 	const { color, changeColor, changeBrushSize, canvasContext, canvasRef } =
 		useContext(Context);
@@ -32,14 +36,14 @@ const SideBar = () => {
 			/>
 
 			<button onClick={(e) => changeColor('#272727')} className='mt-2 btn'>
-				<img src='/icons/eraser.svg' className='icon' alt='eraser button' />
+				<img src={eraserImg} className='icon' alt='eraser button' />
 			</button>
 
 			<button className='btn' onClick={clearCanvas}>
-				<img src='/icons/clear.svg' className='icon' alt='clear canvas button' />
+				<img src={clearImg} className='icon' alt='clear canvas button' />
 			</button>
 			<button className='btn' onClick={downloadImage}>
-				<img src='/icons/download.svg' className='icon' alt='download drawing button' />
+				<img src={downloadImg} className='icon' alt='download drawing button' />
 			</button>
 
 			<input
