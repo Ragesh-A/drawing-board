@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Ragesh-A/pixel-palette/static/css/main.379ddcfa.css",
-    "main.js": "/Ragesh-A/pixel-palette/static/js/main.0c819419.js",
-    "index.html": "/Ragesh-A/pixel-palette/index.html",
-    "main.379ddcfa.css.map": "/Ragesh-A/pixel-palette/static/css/main.379ddcfa.css.map",
-    "main.0c819419.js.map": "/Ragesh-A/pixel-palette/static/js/main.0c819419.js.map"
+    "main.css": "/pixel-palette/static/css/main.379ddcfa.css",
+    "main.js": "/pixel-palette/static/js/main.0c819419.js",
+    "index.html": "/pixel-palette/index.html",
+    "main.379ddcfa.css.map": "/pixel-palette/static/css/main.379ddcfa.css.map",
+    "main.0c819419.js.map": "/pixel-palette/static/js/main.0c819419.js.map"
   },
   "entrypoints": [
     "static/css/main.379ddcfa.css",
